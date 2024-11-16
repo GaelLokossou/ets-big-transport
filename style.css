@@ -14,12 +14,14 @@
     background-color: #3e464b;
     padding: 10px 5% 10px 5%;
     height: 80px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     color: white;
     text-transform: uppercase;
+    position: fixed;
 }
 
 .logo{
@@ -83,12 +85,13 @@
 
 .section1 {
     height: 90vh; /* Hauteur de la section */
-    background-image: url('../images/section1-i1.jpg'); /* Chemin vers l'image */
+    background-image: url('images/section1-i1.jpg'); /* Chemin vers l'image */
     background-size: cover;
     background-position: center;
     color: white; /* Couleur du texte */
     padding: 20px;
     display: flex; /* Utiliser Flexbox */
+    background-color: #3e464b;
 }
 
 
@@ -306,6 +309,15 @@
     background-color: rgb(196, 191, 176);
     margin-bottom: 20px;
     border-radius: 5px;
+    width: 320px;
+    height: 320px;
+    margin-right: 20px;
+}
+
+.produit-element{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .produits .element img{
@@ -329,17 +341,22 @@
 }
 
 .produit h3{
-    color: black
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .produit {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     margin: 0 auto;
 }
 
+.produit .element{
+    background-color: #fff;
+}
 .article {
     width: 20%;
     text-align: center;
@@ -443,6 +460,14 @@
 .contact-info img{
     height: 26px;
     border-radius: 50%;
+}
+
+.contact-info img{
+    margin-bottom: 12px;
+}
+
+.social-media a img{
+    margin-bottom: 12px;
 }
 
 .social-media a {
